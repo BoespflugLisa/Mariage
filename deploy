@@ -1,0 +1,2 @@
+#!/bin/sh
+rsync -av ./ claires@ssh.cluster030.hosting.ovh.net:~/maxime_et_claire --include=public/build --include=public/bundles --include=public/img --include=public/.htaccess --include=vendor --include=.env --exclude=public/img/presents --exclude-from=.gitignore --exclude=".*"

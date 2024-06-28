@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Maxime et Claire{% endblock %}
+
+{% block body %}
+    {% if app.user != null %}
+        <presents :availablepresents = "{{availablePresents}}" :allcategories = "{{allCategories}}" user-roles="{{ app.user.getRolesString() }}"/>
+    {% else %}
+        <presents :availablepresents = "{{availablePresents}}" :allcategories = "{{allCategories}}" user-roles=""/>
+    {% endif %}
+{% endblock %}

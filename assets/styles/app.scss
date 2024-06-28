@@ -1,0 +1,47 @@
+@import "admin/dashboard";
+
+body {
+    background-color: lightgray;
+}
+
+@font-face {
+    font-family: 'the_smileregular';
+    src: url('./fonts/thesmile-webfont.woff2') format('woff2'),
+         url('./fonts/thesmile-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main-title-font {
+    font-family: 'the_smileregular'!important;
+    color: #9F9377;
+    font-weight: 100;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.the-smile-regular {
+    font-family: 'the_smileregular'!important;
+    font-weight: 100;
+}
+
+.appbar-margin {
+    margin-top: 112px;
+}
+
+.footer-margin {
+    margin-bottom: 152px;
+
+    @media screen and (max-width: 1264px) {
+        margin-bottom: 296px;
+    }
+}
+
+.center-div {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.content-page {
+    padding: 0% 10%;
+}

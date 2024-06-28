@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Claire et Maxime{% endblock %}
+
+{% block body %}
+    {% if app.user != null %}
+        <home user-roles="{{ app.user.getRolesString() }}"/>
+    {% else %}
+        <home user-roles=""/>
+    {% endif %}
+{% endblock %}
